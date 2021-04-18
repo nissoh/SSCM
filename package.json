@@ -1,0 +1,47 @@
+{
+    "name": "sscm",
+    "version": "10.0.0",
+    "license": "MIT",
+    "main": "main.js",
+    "module": ".dist/esm/index.js",
+    "files": [
+        ".dist"
+    ],
+    "sideEffects": false,
+    "scripts": {
+        "clean": "yarn g:tsc:clean",
+        "build": "webpack --mode production",
+        "serve": "webpack serve",
+        "run-electron": "yarn run build && electron .",
+        "upgrade-interactive": "yarn upgrade-interactive"
+    },
+    "dependencies": {
+        "@aelea/core": "0.9.0",
+        "@aelea/router": "0.8.0",
+        "@aelea/ui-components": "0.10.0",
+        "@aelea/ui-components-theme": "0.4.0",
+        "@metamask/detect-provider": "1.2.0",
+        "@most/core": "1.6.1",
+        "@most/disposable": "1.3.0",
+        "@most/prelude": "1.8.0",
+        "@most/scheduler": "1.3.0",
+        "@most/types": "1.1.0",
+        "@yarnpkg/pnpify": "^3.0.0-rc.3",
+        "noble-bls12-381": "^0.9.0"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "4.22.0",
+        "@typescript-eslint/parser": "4.22.0",
+        "copy-webpack-plugin": "^8.1.1",
+        "electron": "^12.0.4",
+        "eslint": "7.24.0",
+        "fork-ts-checker-webpack-plugin": "6.2.1",
+        "html-webpack-plugin": "5.3.1",
+        "ts-loader": "9.0.0",
+        "tsconfig-paths-webpack-plugin": "3.5.1",
+        "typescript": "4.2.4",
+        "webpack": "5.33.2",
+        "webpack-cli": "4.6.0",
+        "webpack-dev-server": "3.11.2"
+    }
+}

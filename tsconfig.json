@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "noUnusedLocals": false,
+    "forceConsistentCasingInFileNames": true,
+    "declarationMap": true,
+    "target": "es2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "incremental": true,
+    "sourceMap": true,
+    "declaration": true,
+    "strict": true,
+    "pretty": true,
+    "lib": [
+      "DOM",
+      "es2020"
+    ]
+  },
+  "exclude": [
+    "**/*.test.ts",
+    "**/.dist"
+  ],
+  "outDir": ".dist/esm",
+  "rootDir": "src",
+  "declarationDir": ".dist/types",
+  "allowSyntheticDefaultImports": true,
+  "esModuleInterop": true
+}
