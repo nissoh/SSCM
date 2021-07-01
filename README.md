@@ -5,7 +5,7 @@ Simple Contact Management App built using https://aelea.dev
 
 Featuring
 - overall simple and modern look, contrast checks looks valid
-- composable are stateless and easily composable
+- components are stateless and easily composable
 - for core components i'm currently using `@aelea/ui-components` which is still WIP. some bugs and bad UX needs to be improved
 - theme color adhere selected theme, currently supports dark & light
 - App is compatible in 3 different environments! WEB, PWA and Electron(desktop)
